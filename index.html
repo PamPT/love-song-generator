@@ -4,42 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <title>Song Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Love Song Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter a name the song should include"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+    <div class="container">
+      <header>
+        <h1>AI Love Song Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter a name the song should include"
+            autofocus
+            required
+            autocomplete="off"
+            class="instruction"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
 
-      <div>
-        My life is brilliant <br />
-        My life is brilliant <br />My love is pure <br />I saw an angel <br />
-        Of that I'm sure
-      </div>
-    </main>
+        <div class="song">
+          My life is brilliant <br />
+          My love is pure <br />I saw an angel <br />
+          Of that I'm sure
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/PamPT"> Pamela Pacheco T. </a> and
-      <a href="https://github.com/PamPT/love-song-generator" target="_blank">
-        is open-sourced on GitHub</a
-      >
-      and is hosted on
-      <a href="https://love-song-generator.netlify.app/" target="_blank">
-        Netlifly.</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/PamPT" target="_blank">
+          Pamela Pacheco T.
+        </a>
+        and
+        <a href="https://github.com/PamPT/love-song-generator" target="_blank">
+          is open-sourced on GitHub</a
+        >
+        and is hosted on
+        <a href="https://love-song-generator.netlify.app/" target="_blank">
+          Netlifly.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
