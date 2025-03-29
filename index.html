@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Song Generator</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
         <h1>AI Love Song Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="song-generator-form">
           <input
             type="text"
             placeholder="Enter a name the song should include"
@@ -32,11 +33,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="song">
-          My life is brilliant <br />
-          My love is pure <br />I saw an angel <br />
-          Of that I'm sure
-        </div>
+        <div class="song" id="song"></div>
       </main>
 
       <footer>
