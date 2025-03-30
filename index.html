@@ -22,20 +22,23 @@
         <h1>AI Love Song Generator</h1>
       </header>
       <main>
-        <form id="song-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a name the song should include"
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="song-generator-form">
+            <input
+              type="text"
+              placeholder="Enter key words the song should include"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="example">i.e: love, sky, Mery</small>
+        </div>
 
-        <div class="song" id="song"></div>
+        <div class="song hidden" id="song"></div>
       </main>
 
       <footer>
