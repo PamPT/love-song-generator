@@ -20,7 +20,7 @@ function generateSong(event) {
 
   let songElement = document.querySelector("#song");
   songElement.classList.remove("hidden");
-  songElement.innerHTML = `<span class="blink">⌛Generating a song that includes ${instructionsInput.value} for you...</span>`;
+  songElement.innerHTML = `<span class="blink">⌛Generating a song that includes the word(s) "${instructionsInput.value}" for you...</span>`;
 
   axios.get(apiURL).then(displaySong);
 }
